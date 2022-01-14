@@ -2,7 +2,13 @@
 
 ##### Enhancements
 
-* None
+* Improve support for registering supplementary and decoration views with UICollectionView.
+[Will McGinty](https://github.com/willmcginty)
+[#110](https://github.com/BottleRocketStudios/iOS-UtiliKit/pull/110)
+
+* Re-organize the way Swift Packages are managed. Instead of importing `UtiliKit` as a package, each target (or Cocoapods subspec) is imported separately. The full list of libraries is: `GeneralUtilities`, `Instantiation`, `TimelessDate`, `Versioning`, `ContainerViewController`, `ActiveLabel`, `Obfuscation`. `UtiliKit` remains as a possible library which will import all the above targets at once.
+[Will McGinty](https://github.com/willmcginty)
+[#104](https://github.com/BottleRocketStudios/iOS-UtiliKit/pull/104)
 
 ##### Bug Fixes
 
@@ -12,7 +18,7 @@
 
 ##### Enhancements
 
-* Make it possible to override functions in container, which aid in `ManagedChild` managemet.
+* Make it possible to override functions in container, which aid in `ManagedChild` management.
 [Will McGinty](https://github.com/willmcginty)
 [#87](https://github.com/BottleRocketStudios/iOS-UtiliKit/pull/87)
 
@@ -69,7 +75,7 @@
 [Will McGinty](https://github.com/willmcginty)
 [#63](https://github.com/BottleRocketStudios/iOS-UtiliKit/pull/63)
 
-* Added the `Obfuscation` subspec, which includes the `ObfuscatedKey` structure for keys/passwords to ensure that 
+* Added the `Obfuscation` subspec, which includes the `ObfuscatedKey` structure for keys/passwords to ensure that
 they don't appear in plaintext within the source or binary of your app.
 [Russell Mirabelli](https://github.com/rmirabelli)
 [#67](https://github.com/BottleRocketStudios/iOS-UtiliKit/pull/67)
